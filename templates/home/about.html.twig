@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - À propos {% endblock %}
+
+{% block body %}
+<section class="my-5">
+    <h1 class="text-center mb-5">Lumos sur</h1>
+    <div class="md:columns-3 mx-0">
+        <div class="col-xl-3 offset-xl-1 about-us-text">
+            <h3 class="mb-4 reveal-1">C'est quoi Poudlard ?</h3>
+            <div>
+                <h4 class="pb-2 reveal-2">L'école qui tisse des lien entre sorciers du monde entier</h4>
+                <ul class="text-left reveal-3">
+                    <li>Œuvrer pour le bien être entre les sorciers et les moldus </li>
+                    <li>Spécialisation en architecture et le développement personel des sorciers </li>
+                    <li>Parce que estimons que chaque sorciers a droit à son odyssey, et pas seulement ceux
+                    qui ont survecu a Voldemort</li>
+                </ul>
+                <h4 class="py-4 reveal-3">Plus de 1000 ans d’expérience dans l'éducation de sorcier dont certains
+                sont devenus des légendes !</h4>
+            </div>
+        </div>
+        <div class="col-xl-4 mb-5">
+            <img src="{{ asset('images/poudlard.png') }}"
+                    class="poudlard mb-md-4 mt-4 mt-md-0 reveal-1" alt="Poudlard Logo">
+        </div>
+        <div class="col-xl-3 align-baseline about-us-text reveal-1">
+            <h3 class="mb-4">Les origines de l'école</h3>
+            <h4 class="pb-2 ">Fonder par 4 des plus grand sorciers qui ont pu exister</h4>
+            <ul class="text-left">
+                <li>Godric Gryffondor dit "le fayot"</li>
+                <li>Salazard Serpentard dit "le canard boiteux" </li>
+                <li>Helga Poufsouffle dit "la joufflue"</li>
+                <li>Rowena Serdaigle dit "la fragile" </li>
+            </ul>
+            <h4 class="pt-3  reveal-2">Une manière singulière pour répartir les élève entre maison </h4>
+            <ul class="text-left reveal-3">
+                <li>En interne avec l'aide d'un choipeau magique les élève sont répartis en fonction de leur tempéramment.
+                </li>
+
+                <li>Les maisons sont en compétitions chaque année ceci afin de motiver chaque élève...
+                    Mais soyons honnete Serpentard gagne sou...( <i>"+10000 Points pour Londubat!"</i>)... Dumbledore vraiment... ?
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-center py-4">Nos petit plus</h2>
+        <div class="row mx-0">
+            <div class="col-md-6 col-lg-4 my-4">
+                <figure class="text-center">
+                    <img class="bg-secondary rounded-pill p-3 border border-secondary" src="{{ asset('images/bed.png') }}" alt="bed logo">
+                    <h5 class="mt-3">Possibiliter d'internat </h5>
+                </figure>
+            </div>
+            <div class="col-md-6 col-lg-4 my-4">
+                <figure class="text-center">
+                    <img class="bg-secondary rounded-pill p-3 border border-secondary" src="{{ asset('images/pine.png') }}" alt="bed logo">
+                    <h5 class="mt-3">De grand espace vert appelant à l'aventure</h5>
+                </figure></div>
+            <div class="col-md-6 col-lg-4 my-4">
+                <figure class="text-center">
+                    <img class="bg-secondary rounded-pill p-3 border border-secondary" src="{{ asset('images/chateau-frontenac.png') }}" alt="bed logo">
+                    <h5 class="mt-3">Un chateau qui recèle encore bien des mystères</h5>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <h2 class="text-center">Nos Célébritès </h2>
+    <div class="row celeb mx-0  my-5">
+        <img class="img-fluid img-celeb rounded-pill" src="{{ asset('images/dragonneau.jpg') }}" alt="norbert dragonneau picture">
+        <div class="col text mx-lg-5 mt-lg-4">
+            <h3 class="mb-2">Norbert Dragonneau</h3>
+            <p>Un des plus célèbres magizoologiste, auteur du livre <i>Vie et habitat des animaux fantasstiques</i></p>
+        </div>
+    </div>
+    <div class="row mx-0 celeb flex-row-reverse my-5">
+        <img class="img-fluid img-celeb rounded-pill" src="{{ asset('images/hp1.jpg') }}" alt="Harry Potter picture">
+        <div class="col text mx-lg5 mt-lg-4 text-right">
+            <h3 class="mb-2 ">Harry Potter</h3>
+            <p class="">Le nouveau né le plus célèbre au monde après le bébé royal...</p>
+        </div>
+    </div>
+    <div class="row mx-0 celeb  my-5">
+        <img class="img-fluid img-celeb rounded-pill" src="{{ asset('images/dumbledore.jpg') }}" alt="Albus Dmbledore picture">
+        <div class="col text mx-lg-5 mt-lg-4">
+            <h3 class="mb-2">Albus Dumbledore</h3>
+            <p>Le plus célèbre directeur de notre école ainsi qu'un des sorciers les plus puissant de notre époque</p>
+        </div>
+    </div>
+    <div class="row mx-0 celeb flex-row-reverse my-5">
+        <img class="img-fluid img-celeb rounded-pill" src="{{ asset('images/gilderoy.png') }}" alt="Surprise picture">
+        <div class="col text mx-lg-5 mt-lg-4 text-right">
+            <h3 class="mb-2 ">Gilderoy Lockhart</h3>
+            <p>Eh mince on dirait que Peeves fait encore des siennes... </p>
+        </div>
+    </div>
+    <div class="row flex-wrap mx-0 celeb my-5">
+            <img class="img-fluid img-celeb rounded-pill mx-auto" src="{{ asset('images/voldemort.png') }}" alt="Avada Kadavra ! picture">
+        <div class="col text mx-lg-5 mt-lg-4">
+            <h3 class="mb-2">Tom Jedusor</h3>
+            <p>Va peut être falloir penser à prendre des bains de soleil Volvi t'es pas d'accord ?</p>
+        </div>
+    </div>
+    </div>
+</section>
+{% endblock %}
+

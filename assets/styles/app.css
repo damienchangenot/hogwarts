@@ -1,3 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Magic";
+    src: url("../fonts/magic-school.one.ttf");
+  }
+@font-face {
+    font-family: "Lumos";
+    src: url("../fonts/LUMOS.TTF");
+  }
+@font-face {
+    font-family: "Dumbledor";
+    src: url("../fonts/dumbledor.ttf");
+  }
+
+@layer base {
+  h1 {
+    @apply text-8xl font-magic;
+  }
+  h2 {
+    @apply text-6xl font-magic;
+  }
+}
 body {
-    background-color: skyblue;
+    background:  url("../images/bg.jpg");
+    background-attachment: fixed;
 }
