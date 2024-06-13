@@ -23,10 +23,13 @@
     @apply text-6xl font-magic;
   }
   h3 {
-    @apply text-4xl font-dumbledor;
+    @apply text-4xl;
   }
   h4 {
-    @apply text-2xl font-dumbledor;
+    @apply text-2xl;
+  }
+  h5 {
+    @apply text-xl;
   }
 }
 body {
